@@ -1,0 +1,35 @@
+/**
+ * Global application styles.
+ */
+
+// Vendor
+@import "~bootstrap/scss/bootstrap.scss"; // v4: https://github.com/twbs/bootstrap
+
+// Manifest
+@import "scss/base";
+
+
+.nav-bar-container {
+  margin-top: 10px;
+}
+
+.post-container {
+  padding: 10px;
+}
+
+.comment-container {
+  padding: 15px 5px;
+  border-top-width: 1px;
+  border-top-color: black;
+  border-top-style: dashed;
+
+  .reply-button {
+    cursor: pointer;
+    color: blue!important;
+    text-decoration: underline!important;
+  }
+}
+
+.new-comment-container {
+  margin-top: 5px;
+}
