@@ -1,6 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-
 
 export default class NewComment extends React.Component {
     constructor(props) {
@@ -45,7 +43,3 @@ export default class NewComment extends React.Component {
         );
     }
 }
-
-Comment.propType = {
-    comment: PropTypes.object
-};
