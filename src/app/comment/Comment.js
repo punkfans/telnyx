@@ -46,5 +46,7 @@ export default class Comment extends React.Component {
 }
 
 Comment.propType = {
-    comment: PropTypes.object.isRequired
+    comment: PropTypes.object.isRequired,
+    shouldDisplayReplyArea: PropTypes.func.isRequired,
+    handleComment: PropTypes.func.isRequired
 };

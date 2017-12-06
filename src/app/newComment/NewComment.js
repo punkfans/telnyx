@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default class NewComment extends React.Component {
     constructor(props) {
@@ -43,3 +44,11 @@ export default class NewComment extends React.Component {
         );
     }
 }
+
+NewComment.propTypes = {
+    toggleReplyVisibility: PropTypes.func,
+    commentId: PropTypes.number,
+    buttonText: PropTypes.string.isRequired,
+    handleComment: PropTypes.func.isRequired,
+    postId: PropTypes.number,
+};

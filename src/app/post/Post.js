@@ -81,7 +81,6 @@ export class Post extends React.Component {
                 <div dangerouslySetInnerHTML={{__html: this.state.post.content}} />
                 {this.state.comments.map((comment) => {
                     return <Comment
-                                toggleReplyVisibility={this.toggleReplyVisibility}
                                 shouldDisplayReplyArea={this.state.shouldDisplayReplyArea}
                                 handleComment={this.handleReply} key={comment.id}
                                 comment={comment}
