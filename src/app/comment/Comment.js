@@ -23,10 +23,6 @@ export default class Comment extends React.Component {
         }
     }
 
-    componentWillMount() {
-
-    }
-
     render() {
         return (
             <div key={this.props.comment.id} className='comment-container'>
@@ -50,5 +46,5 @@ export default class Comment extends React.Component {
 }
 
 Comment.propType = {
-    comment: PropTypes.object
+    comment: PropTypes.object.isRequired
 };
